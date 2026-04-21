@@ -22,5 +22,7 @@ public class Reservation
 
     public TimeOnly EndTime { get; set; }
 
+    [Required]
+    [MinLength(1)]
     public string Status { get; set; } = string.Empty;
 }
